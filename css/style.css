@@ -13,13 +13,13 @@ header, footer {
   padding: 16px;
 }
 
-ul {
+header ul {
   border: 1px solid red;
   float: right;
   color: white;
 }
 
-li {
+header li {
   border: 1px solid red;
   display: inline-block;
   padding: 16px;
@@ -38,7 +38,7 @@ h1, h2, h3, h4 {
   top: 32px;
   flex: none;
   order: 0;
-  align-self: stretch;
+  align-self: auto;
   box-sizing: border-box;
   flex-grow: 0;
   margin: 16px;
@@ -106,7 +106,7 @@ p {
   top: 16px;
   box-sizing: border-box;
   order: 0;
-  align-self: stretch;
+  align-self: auto;
 } 
 
 .flexContainer {
@@ -121,7 +121,7 @@ p {
   height: auto;
   left: calc(50% - 1400px/2);
   top: 16px;
-  align-self: stretch;
+  align-self: auto;
   flex-grow: 1;
   margin: 16px;
   padding: 16px;
@@ -134,15 +134,15 @@ left: calc(50% - 1377px/2);
 top: 136px;
 flex: none;
 order: 1;
-align-self: stretch;
+align-self: auto;
 flex-grow: 1;
 }
 
 /* My Work Section */
 .myWork {
   border: 1px solid red;
-  display: grid;
   display: -ms-grid;
+  display: grid;
   flex-direction: column;
   align-items: center;
   padding: 16px;
@@ -185,7 +185,7 @@ flex-grow: 1;
   box-sizing: border-box;
   flex: none;
   order: 0;
-  align-self: stretch;
+  align-self: auto;
   flex-grow: 1;
   margin: 0px 16px;
 }
@@ -221,7 +221,7 @@ flex-grow: 1;
   box-sizing: border-box;
   flex: none;
   order: 0;
-  align-self: stretch;
+  align-self: auto;
   flex-grow: 0;
   margin: 16px 0px;
 }
@@ -240,7 +240,7 @@ flex-grow: 1;
   box-sizing: border-box;
   flex: none;
   order: 1;
-  align-self: stretch;
+  align-self: auto;
   flex-grow: 0;
   margin: 16px 0px;
 }
