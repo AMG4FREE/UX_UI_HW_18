@@ -1,29 +1,82 @@
 body {
-  border: 1px solid red;  
-  margin: 0;
+  border: 1px solid red;
+  margin: 8px;
+  max-width: fit-content;
 }
 
-header {
+/* header and footer sections */
+header, footer {
+  display: flex;
   border: 1px solid red;
   background-color: #373738;
+  text-align: right;
   padding: 16px;
 }
 
-header ul {
+ul {
   border: 1px solid red;
   float: right;
   color: white;
 }
 
-header li {
+li {
   border: 1px solid red;
   display: inline-block;
   padding: 16px;
 }
 
-header p {
+h1, h2, h3, h4 {
   border: 1px solid red;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px;
+  position: static;
+  width: auto;
+  height: auto;
+  top: 32px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  box-sizing: border-box;
+  flex-grow: 0;
+  margin: 16px;
+  display: flex;
+  left: calc(50% - 500px/2);
+  flex-grow: 0;
+}
+
+h2 {
+  order: 1;
+}
+
+h3 {
+  order: 2;
+}
+
+h4 {
+  order: 3;
+}
+
+p {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  position: static;
+  width: auto;
+  height: auto;
+  left: 16px;
+  top: 16px;
+  box-sizing: border-box;
+  flex: none;
+  order: 2;
+  align-self: center;
+  flex-grow: 0;
+  margin: 16px;
 }
 
 /* Hero Image Section */
@@ -31,73 +84,101 @@ header p {
   border: 1px solid red;
   background-color: #EBEBEB;
   padding: 16px;
-}
-
-div {
-  flex: auto;
-  border: 1px solid red;
-  max-width: auto;
-  margin: auto;
-  padding: 16px;
-  background-color: #FFFFFF;
-  text-align: center;    
+  width: 400px;
 }
 
 /* UX Skills Section */
-.myuxskills {
-  border: 5px solid red;
+.mySkills {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  flex-grow: 1;
   position: relative;
-  width: 1500px;
-  height: 750px;
+  width: auto;
+  height: auto;
+  background: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  margin: 16px;
+  left: 16px;
+  top: 16px;
+  box-sizing: border-box;
+  order: 0;
+  align-self: stretch;
+} 
+
+.flexContainer {
+  border: 1px solid red;
+  display: flex;
+  flex:auto;
+  flex-direction: column;
+  max-width: auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: static;
+  height: auto;
+  left: calc(50% - 1400px/2);
+  top: 16px;
+  align-self: stretch;
+  flex-grow: 1;
+  margin: 16px;
+  padding: 16px;
+  background-color: #FFFFFF;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+width: 800px;
+left: calc(50% - 1377px/2);
+top: 136px;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+}
+
+/* My Work Section */
+.myWork {
+  border: 1px solid red;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  position: relative;
+  width: 800px;
+  height: auto;
   background: #FFFFFF;
 }
 
-h1 {
-  border: 5px solid red;
+.workGrid {
+  border: 1px solid red;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0px;
-  position: static;
-  width: 1400px;
-  height: 75px;
-  left: calc(50% - 1400px/2);
-  top: 32px;    
   flex: none;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  position: static;
+  width: 500px;
+  height: auto;
+  left: 16px;
+  top: 16px;
   order: 0;
-  align-self: stretch;
   flex-grow: 0;
-  margin: 29px 0px;
+  margin: 32px;
 }
 
-div {
-border: 5px solid red;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 16px;
-position: static;
-width: 400px;
-height: 632px;
-left: 961px;
-top: 16px;
-flex: none;
-order: 2;
-align-self: stretch;
-flex-grow: 0;
-margin: 0px 32px;
-}
-
-img {
+.project-image {
   border: 1px solid red;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0px;
   position: static;
-  width: 368px;
-  height: 273px;
+  width: 400px;
+  height: 390px;
   left: 16px;
   top: 16px;
   box-sizing: border-box;
@@ -105,167 +186,28 @@ img {
   order: 0;
   align-self: stretch;
   flex-grow: 1;
-  margin: 16px 0px;
-}
-
-h3 {
-  border: 5px solid red;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  position: static;
-  width: 368px;
-  height: 65px;
-  left: 16px;
-  top: 305px;
-  box-sizing: border-box;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 16px 0px;
-}
-
-p {
-  border: 5px solid red;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  position: static;
-  width: 368px;
-  height: 230px;
-  left: 16px;
-  top: 386px;
-  box-sizing: border-box;
-  flex: none;
-  order: 2;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 16px 0px;
-}
-
-
-/* My Work Section */
-.mywork {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 32px;
-  
-  position: relative;
-  width: 1485px;
-  height: 1586px;
-  
-  background: #FFFFFF;
-  /* SystemRed/Light */
-  
-  border: 5px solid red;
-}
-
-h1 {
-  display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: flex-start;
-padding: 0px;
-
-position: static;
-width: 524px;
-height: 75px;
-left: calc(50% - 524px/2);
-top: 32px;
-border: 5px solid red;
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 29px 0px;
-}
-
-.projectlist {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 16px;
-  position: static;
-  width: 894px;
-  height: 1314px;
-  left: calc(50% - 894px/2);
-  top: 136px;
-  border: 5px solid #FF3B30;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 29px 0px;
-
-.project {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  position: static;
-  width: 862px;
-  height: 406px;
-  left: 16px;
-  top: 892px;
-  border: 5px solid #FF3B30;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin: 32px 0px;
-}
-
-.project-image {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  position: static;
-  width: 400px;
-  height: 250px;
-  left: 16px;
-  top: 78px;
-  border: 5px solid #FF3B30;
-  box-sizing: border-box;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 16px;
-  position: static;
-  width: 333px;
-  height: 250px;
-  left: 33.5px;
-  top: 0px;
-  background: url(.png);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 0px 16px;
 }
 
 .project-content {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 16px;
   position: static;
-  width: 414px;
-  height: 374px;
+  width: auto;
+  height: auto;
   left: 432px;
   top: 16px;
-  border: 1px solid #FF3B30;
   flex: none;
   order: 1;
   flex-grow: 0;
   margin: 0px 16px;
 }
 
-.project-content h3 {
+.project-content h4 {
+  border: 1px solid red;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -275,7 +217,6 @@ margin: 29px 0px;
   height: 65px;
   left: 16px;
   top: 16px;
-  border: 5px solid #FF3B30;
   box-sizing: border-box;
   flex: none;
   order: 0;
@@ -285,25 +226,26 @@ margin: 29px 0px;
 }
 
 .project-content p {
+  border: 1px solid red;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 16px;
   position: static;
-  width: 382px;
-  height: 208px;
+  width: 400px;
+  height: auto;
   left: 16px;
   top: 97px;
-  border: 5px solid #FF3B30;
   box-sizing: border-box;
   flex: none;
   order: 1;
   align-self: stretch;
   flex-grow: 0;
   margin: 16px 0px;
-
 }
-button {
+
+.project-content button {
+  border: 1px solid red;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -319,25 +261,18 @@ button {
   order: 2;
   flex-grow: 0;
   margin: 16px 0px;
-}
+  }
 
-
-/* Footer Section */
-footer {
+button {
   border: 1px solid red;
-  background-color: #373738;
-  padding: 5px;
-  color: white;
-}
-
-footer ul {
-  border: 1px solid red;
-  list-style: none;
-  padding-left: 5px;
-}
-
-footer li {
-  border: 1px solid red;
-  display: inline-block;
-  padding: 0px 7px;
+  width: auto;
+  height: auto;
+  left: 16px;
+  top: 321px;
+  background: #C2C2C2;
+  border-radius: 5px;
+  flex: none;
+  order: 2 ;
+  flex-grow: 0;
+  margin: 16px 0px;
 }
