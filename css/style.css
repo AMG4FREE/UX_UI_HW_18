@@ -247,16 +247,34 @@ header li {
 
 .workGrid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "img h3 h3 ."
+    "img p p button"
+  ;
   gap: 1rem;
   align-items: center;
-  margin: 1rem;
+  margin: 1rem .5rem;
   border: 1px solid red;
   padding: 1rem;
   width: auto;
   height: auto;
   left: 1rem;
   top: 1rem;
+}
+
+.workGrid > img {
+  grid-area: img;
+}
+.workGrid > h3 {
+  grid-area: h3;
+}
+.workGrid > p {
+  grid-area: p;
+}
+.workGrid > button {
+  grid-area: button;
 }
 
 .workGrid .project-image {
@@ -334,4 +352,20 @@ footer li {
   display: inline-block;
   padding: .5rem 2rem;
   margin: 1rem;
+}
+
+/* media queries */
+@media only screen and (max-width:1000) {
+  .workGrid {
+    .workGrid {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr; 
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "img"
+        "h3"
+        "p"
+        "button"
+      ;
+    }
 }
