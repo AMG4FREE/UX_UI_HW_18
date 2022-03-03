@@ -148,7 +148,7 @@ header li {
   margin: 1rem;
   border: 1px solid red;
   padding: 1rem;
-  width: fit-content;
+  width: auto;
   height: 3rem;
   background-color: #3a3a3a;
   color: white;
@@ -246,6 +246,7 @@ header li {
 }
 
 .workGrid {
+  display: -ms-grid;
   display: grid;
   grid-template-rows: 1fr 1fr; 
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -356,11 +357,11 @@ footer li {
 
 /* media queries */
 @media only screen and (max-width:1000) {
-  .workGrid {
     .workGrid {
       display: grid;
-      grid-template-rows: 1fr 1fr 1fr 1fr; 
+      grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr;
+      -ms-grid-columns: auto;
       grid-template-areas:
         "img"
         "h3"
